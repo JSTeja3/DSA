@@ -1,5 +1,3 @@
-package BruteForce;
-
 import java.util.*;
 
 public class SumofArray {

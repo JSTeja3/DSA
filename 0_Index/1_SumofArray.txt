@@ -36,4 +36,4 @@ Explanation
 
 Self Explanatory
 
--->O(T*N) - Brute force
+-->O(T*N), O(1) - Brute force

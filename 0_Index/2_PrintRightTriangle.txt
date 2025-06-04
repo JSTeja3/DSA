@@ -45,4 +45,4 @@ Self Explanatory
 
 
 
--->O(T*N*N) - Brute force
+-->O(T*N*N), O(N*N) - Brute force
