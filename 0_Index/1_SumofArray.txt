@@ -1,3 +1,5 @@
+****** PROBLEM STATEMENT ******
+
 Given an array of integers, find the sum of the elements of the given array.
 
 Note: Try to solve this without declaring / storing the array elements.  

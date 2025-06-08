@@ -1,3 +1,5 @@
+****** PROBLEM STATEMENT ******
+
 Print a mirror image of a right-angled triangle using '*'. See examples for more details.
 
 Input Format
