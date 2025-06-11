@@ -20,11 +20,11 @@ public class DiagonalTraversalOfMatrix {
         StringBuilder result = new StringBuilder();
         int j=N-1;
         int i=0;
-        while(i<N && j>=0){
+        while(i<N && j>=0){ // move through first row and first column
             int sum = 0;
             int x = i;
             int y = j;
-            while(x<N && y<N){
+            while(x<N && y<N){ // move diagonally
                 sum += ar[x][y];
                 x++; 
                 y++;
