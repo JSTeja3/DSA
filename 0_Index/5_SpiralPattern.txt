@@ -1,7 +1,7 @@
 ****** PROBLEM STATEMENT ******
 
-You are given an integer N. Print a 2N×2N checkerboard consisting of 2×2 squares alternating '*' and '-', with the top-left cell being '*'. See the following examples for N = 1,2,3 and 4 respectively.
- 
+Print the given spiral pattern using '*'. See the example for more details.
+
 Input Format
 The first line of input contains T - the number of test cases. It is followed by T lines, each line contains a single integer N - the size of the pattern.
 
@@ -15,23 +15,26 @@ Constraints
 Example
 Input
 2
-4
-2
+5
+10
 
 OutputCase #1:
-**--**--
-**--**--
---**--**
---**--**
-**--**--
-**--**--
---**--**
---**--**
+* * * * * 
+        * 
+* * *   * 
+*       * 
+* * * * * 
 Case #2:
-**--
-**--
---**
---**
+* * * * * * * * * * 
+                  * 
+* * * * * * * *   * 
+*             *   * 
+*   * * * *   *   * 
+*   *     *   *   * 
+*   *         *   * 
+*   * * * * * *   * 
+*                 * 
+* * * * * * * * * * 
 Explanation
 
 Self Explanatory
