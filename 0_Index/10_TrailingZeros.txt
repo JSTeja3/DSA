@@ -31,5 +31,5 @@ Explanation
 
 
 
---> O(log5(N)), O(1) - Brute force
+--> O(T*log5(N)), O(1) - Brute force
 
