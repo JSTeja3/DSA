@@ -42,3 +42,5 @@ The positive integers whose factorial ends with two 0's are: 10, 11, 12, 13, 14
 
 
 --> O(T*N*log5(N)), O(1) - Brute force (30 points)
+
+--> O(T*log2(N)log5(N)), O(1) - Binary Search (70 points)
