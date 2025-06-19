@@ -16,16 +16,14 @@ public class LCMAndHCF{
         sc.close();
     }
     public static void lcmAndhcf(long A, long B){
-        long max = (A>B)?A:B;
-        long min = (A<B)?A:B;
-        long HCF = findHCF(max, min);
+        long HCF = findHCF(A, B);
         long LCM = (A*B)/HCF;
         System.out.println(LCM + " " + HCF);
     }
-    public static long findHCF(long min, long max){
-        if(min==0){
-            return max;
+    public static long findHCF(long a, long b){
+        if(a==0){
+            return b;
         }
-        return findHCF(max%min, min);
+        return findHCF(b%a, a);
     }
 }
