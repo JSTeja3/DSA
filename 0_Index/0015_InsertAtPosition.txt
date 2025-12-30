@@ -1,0 +1,46 @@
+****** PROBLEM STATEMENT ******
+
+Given an integer array of size N, insert a given element X at a specified position P.
+After insertion, print the updated array.
+
+Assume the array has enough capacity to hold one extra element.
+
+Input Format
+
+1. First line: integer N (number of elements)
+
+2. Second line: N space-separated integers
+
+3. Third line: integer X (element to insert)
+
+4. Fourth line: integer P (0-based index)
+
+Output Format
+
+Print the updated array after insertion
+
+Constraints
+
+1 ≤ N ≤ 10^5
+
+-10^9 ≤ arr[i], X ≤ 10^9
+
+0 ≤ P ≤ N
+
+Sample Input
+
+5
+1 2 4 5 6
+3
+2
+
+
+Sample Output
+
+1 2 3 4 5 6
+
+Explanation
+
+Self Explanatory
+
+--> O(N), O(1) - Brute Force
