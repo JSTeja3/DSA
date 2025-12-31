@@ -1,0 +1,40 @@
+****** PROBLEM STATEMENT ******
+
+
+Given an integer array of size N and an integer X, find the first index at which X occurs in the array.
+If X is not present, print -1.
+
+Input Format
+
+1. First line: integer N
+
+2. Second line: N space-separated integers
+
+3. Third line: integer X
+
+Output Format
+
+Print a single integer → first index of X or -1
+
+Constraints
+
+1 ≤ N ≤ 10^5
+
+-10^9 ≤ arr[i], X ≤ 10^9
+
+Sample Input
+
+6
+4 2 7 2 9 2
+2
+
+
+Sample Output
+
+1
+
+Explanation
+
+Self Explanatory
+
+--> O(N), O(1) - Brute Force
