@@ -1,0 +1,38 @@
+****** PROBLEM STATEMENT ******
+
+Given a sorted integer array of size N, remove duplicate elements in-place such that each unique element appears only once.
+Return the new length of the array after removal.
+The first part of the array should contain the unique elements in original order.
+
+Input Format
+
+First line: integer N
+
+Second line: N space-separated integers (sorted)
+
+Output Format
+
+Print a single integer → new length after removing duplicates
+
+Constraints
+
+1 ≤ N ≤ 10^5
+
+-10^9 ≤ arr[i] ≤ 10^9
+
+Sample Input
+
+7
+1 1 2 2 3 3 4
+
+
+Sample Output
+
+4
+
+Explanation
+
+Self Explanatory
+
+-->  O(N), O(N) - Brute Force
+-->  O(N), O(1) - Two Pointer
