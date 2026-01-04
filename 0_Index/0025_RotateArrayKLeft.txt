@@ -1,0 +1,40 @@
+****** PROBLEM STATEMENT ******
+
+Given an integer array of size N and an integer K, rotate the array to the left by K positions.
+
+Input Format
+
+First line: integer N
+
+Second line: N space-separated integers
+
+Third line: integer K
+
+Output Format
+
+Print the array after left rotation
+
+Constraints
+
+1 ≤ N ≤ 10^5
+
+0 ≤ K ≤ 10^9
+
+-10^9 ≤ arr[i] ≤ 10^9
+
+Sample Input
+
+7
+1 2 3 4 5 6 7
+2
+
+Sample Output
+
+3 4 5 6 7 1 2
+
+Explanation
+
+Self Explanatory
+
+-->  O(N), O(N) - Brute Force
+-->  O(N), O(1) - Two Pointer(Reverse)
