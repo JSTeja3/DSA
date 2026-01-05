@@ -14,6 +14,7 @@ public class LongestSubArraySumK {
         System.out.println(returnLengthofLargest(N, arr, K));
         sc.close();
     }
+    // Only works if array elements are Non Negative numbers ( poistives and zeroes )
     public static int returnLengthofLargest(int N, int[] arr, int K){
         int maxSubLength = 0;
         int p1=0, p2=0;
