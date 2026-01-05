@@ -1,0 +1,36 @@
+****** PROBLEM STATEMENT ******
+
+Given an integer array of size N, reverse the array.
+
+Input Format
+
+1. First line: integer N
+
+2. Second line: N space-separated integers
+
+Output Format
+
+Print the reversed array
+
+Constraints
+
+1 ≤ N ≤ 10^5
+
+-10^9 ≤ arr[i] ≤ 10^9
+
+Sample Input
+
+5
+1 2 3 4 5
+
+
+Sample Output
+
+5 4 3 2 1
+
+Explanation
+
+Self Explanatory
+
+--> O(N), O(N) - Brute Force
+--> O(N), O(1) - Two Pointer

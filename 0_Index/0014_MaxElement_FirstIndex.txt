@@ -1,0 +1,43 @@
+****** PROBLEM STATEMENT ******
+
+Given an integer array of size N, find:
+
+1. The maximum element in the array
+
+2. The first index at which the maximum element occurs
+
+Input Format
+
+1. First line: integer N
+
+2. Second line: N space-separated integers
+
+Output Format
+
+Print two integers:
+
+1. Maximum element
+
+2. Index of its first occurrence
+
+Constraints
+
+1 ≤ N ≤ 10^5
+
+-10^9 ≤ arr[i] ≤ 10^9
+
+Sample Input
+
+6
+2 5 1 5 3 5
+
+
+Sample Output
+
+5 1
+
+Explanation
+
+Self Explanatory
+
+--> O(N), O(1) - Brute Force

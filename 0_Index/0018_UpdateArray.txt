@@ -1,0 +1,44 @@
+****** PROBLEM STATEMENT ******
+
+Given an integer array of size N, update the element at index P with a new value X.
+After updating, print the modified array.
+
+Input Format
+
+1. First line: integer N
+
+2. Second line: N space-separated integers
+
+3. Third line: integer P (0-based index)
+
+4. Fourth line: integer X (new value)
+
+Output Format
+
+Print the updated array
+
+Constraints
+
+1 ≤ N ≤ 10^5
+
+0 ≤ P < N
+
+-10^9 ≤ arr[i], X ≤ 10^9
+
+Sample Input
+
+5
+10 20 30 40 50
+2
+99
+
+
+Sample Output
+
+10 20 99 40 50
+
+Explanation
+
+Self Explanatory
+
+--> O(1), O(1) - Brute Force

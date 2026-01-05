@@ -1,0 +1,41 @@
+****** PROBLEM STATEMENT ******
+
+Given an integer array of size N and an integer K, rotate the array to the right by K steps.
+
+Input Format
+
+1. First line: integer N
+
+2. Second line: N space-separated integers
+
+3. Third line: integer K
+
+Output Format
+
+Print the array after right rotation
+
+Constraints
+
+1 ≤ N ≤ 10^5
+
+0 ≤ K ≤ 10^9
+
+-10^9 ≤ arr[i] ≤ 10^9
+
+Sample Input
+
+7
+1 2 3 4 5 6 7
+3
+
+
+Sample Output
+
+5 6 7 1 2 3 4
+
+Explanation
+
+Self Explanatory
+
+-->  O(N), O(N) - Brute Force
+-->  O(N), O(1) - Two Pointer(Reverse)

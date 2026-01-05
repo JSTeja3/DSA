@@ -1,0 +1,37 @@
+****** PROBLEM STATEMENT ******
+
+Given an integer array of size N, determine whether the array is a palindrome.
+An array is palindrome if it reads the same forward and backward.
+
+Input Format
+
+1. First line: integer N
+
+2. Second line: N space-separated integers
+
+Output Format
+
+Print true if palindrome, otherwise print false
+
+Constraints
+
+1 ≤ N ≤ 10^5
+
+-10^9 ≤ arr[i] ≤ 10^9
+
+Sample Input
+
+5
+1 2 3 2 1
+
+
+Sample Output
+
+true
+
+Explanation
+
+Self Explanatory
+
+-->  O(N), O(N) - Brute Force
+-->  O(N), O(1) - Two Pointer
