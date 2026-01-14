@@ -14,7 +14,7 @@ Third line: integer k
 
 Output Format
 
-Print a single integer → length of longest substring having 1's after performing the operations  
+Print a single integer → length of longest substring having only 1's after performing the operations  
 
 Constraints
 
