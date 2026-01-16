@@ -15,7 +15,7 @@ Print a single integer → length of longest substring having only 1's
 
 Constraints
 
-1 <= nums.length <= 105
+1 <= nums.length <= 10^5
 
 nums[i] is either 0 or 1
 
