@@ -1,0 +1,45 @@
+****** PROBLEM STATEMENT ******
+
+Given an integer array nums and an integer k, return the length of the longest contiguous 
+subarray that contains at most k distinct integers.
+
+Input Format
+
+First line: integer N
+
+Second line: N space-separated positive integers
+
+Third line: integer k
+
+Output Format
+
+Print a single integer -> Length of longest subarray having exacting K distinct characters
+
+If no such subarray exists, return 0
+
+Constraints
+
+1 <= nums.length <= 10^5
+
+1 <= nums[i] <= 10^5
+
+0 <= k <= nums.length
+
+Sample Inputs
+
+Example 1
+Input: nums = [1,2,1,2,3], k = 2
+Output: 4
+Explanation: The subarray [1,2,1,2] contains at most 2 distinct integers.
+
+Example 2
+Input: nums = [1,2,3,4,5], k = 2
+Output: 2
+Explanation: Any subarray with 2 distinct integers has length 2.
+
+Example 3
+Input: nums = [1,1,1,1], k = 1
+Output: 4
+
+ -->  O(N*N), O(1) - Brute Force
+ -->  O(N), O(1) - Two Pointer(Slinding Window)
