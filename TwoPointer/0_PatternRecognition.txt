@@ -20,7 +20,7 @@
  --> Rule/Property of Sliding Window:
    1. When a window becomes invalid, moving the left pointer forward should help make it valid again.
    not may be make it valid in next iterations
- -->Types of Sliding Window:
+ -->Types of Sliding Window:(works only for non-negative numbers)
    1. atmost k (<=k): atmost k slips
    2. aleast k (>=k): atleast k unique
    3. equals k (==k): equals to k size
