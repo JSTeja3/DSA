@@ -1,0 +1,39 @@
+****** PROBLEM STATEMENT ******
+
+Given a binary array nums and an integer k, return the maximum length of a contiguous subarray 
+that contains at most k zeros.
+
+For today, use:
+k = 2
+
+Input Format
+
+First line: integer N
+
+Second line: N space-separated positive integers
+
+
+Output Format
+
+Print a single integer → length of longest substring having only 1's and having atmost k zeroes
+
+Constraints
+
+1 <= nums.length <= 10^5
+
+nums[i] is either 0 or 1.
+
+Sample Inputs
+
+Example 1
+Input: nums = [1,0,1,0,1,0,1], k = 2
+Output: 5
+Explanation: The subarray [1,0,1,0,1] contains at most 2 zeros.
+
+
+Example 2
+Input: nums = [0,0,0,1,1,1], k = 2
+Output: 5
+
+ -->  O(N*N), O(1) - Brute Force
+ -->  O(N), O(1) - Two Pointer(Slinding Window)
