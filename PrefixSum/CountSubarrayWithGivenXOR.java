@@ -4,7 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class SubarraySumDivisibleByK {
+public class CountSubarrayWithGivenXOR {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
         int N = sc.nextInt();
@@ -13,21 +13,20 @@ public class SubarraySumDivisibleByK {
             nums[i] = sc.nextInt();
         }
         int k = sc.nextInt();
-        System.out.println(subarraysDivByK(nums, k));
+        System.out.println(subarrayXor(nums, k));
         sc.close();
     }
-    public static int subarraysDivByK(int[] nums, int k) {
-        int currSum = 0;
-        int count = 0;
+    public static long subarrayXor(int arr[], int k) {
+        int count = 0 ;
+        int xor = 0;
         Map<Integer, Integer> map = new HashMap<>();
         map.put(0,1);
-        for(int i=0; i<nums.length; i++){
-            currSum += nums[i];
-            int temp = ((currSum%k)+k)%k; //for all numbers including negative numbers
-            if(map.containsKey(temp)){
-                count += map.get(temp);
+        for(int i=0; i<arr.length; i++){
+            xor ^= arr[i];
+            if(map.containsKey(xor^k)){
+                count += map.get(xor^k);
             }
-            map.put(temp, map.getOrDefault(temp, 0)+1);
+            map.put(xor, map.getOrDefault(xor, 0)+1);
         }
         return count;
     }
