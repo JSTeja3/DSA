@@ -1,0 +1,56 @@
+****** PROBLEM STATEMENT ******
+
+You are given a string s consisting only lowercase alphabets and an integer k. 
+Your task is to find the length of the longest substring that contains atmost k distinct characters.
+
+Input Format
+
+First line: String S
+
+Second line: integer K
+
+Output Format
+
+Print a single integer -> Length of longest substring having atmost K distinct characters
+
+If no such substring exists, return -1. 
+
+Constraints:
+
+1 <= K <= 26
+1 <= |str| <= 10^6
+
+
+Sample Inputs
+
+Sample Input 1:
+2
+2
+abbbbbbc
+3
+abcddefg
+Sample Output 1:
+7
+4
+Explanation:
+For the first test case, ‘str’ = ‘abbbbbbc’ and ‘K’ = 2, 
+then the substrings that can be formed are [‘abbbbbb’, ‘bbbbbbc’]. 
+Hence the answer is 7.
+
+For the second test case, ‘str’ = ‘abcddefg’ and ‘K’ = 3, 
+then the substrings that can be formed is [‘cdde’, ‘ddef’]. 
+Hence the answer is 4.
+
+
+Sample Input 2:
+2
+3
+aaaaaaaa
+1
+abcefg
+Sample Output 2:
+8   
+1   
+
+-->  O(N*N), O(1) - Brute Force
+-->  O(N), O(1) - Two Pointer(Sliding window)
