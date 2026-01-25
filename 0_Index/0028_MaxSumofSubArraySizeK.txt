@@ -45,4 +45,4 @@ Output: 400
 Explanation: arr3 = 400, which is maximum.
 
 -->  O(N*k), O(1) - Brute Force
--->  O(N), O(1) - TwoPointer(Sliding Window)
+-->  O(N), O(1) - Two Pointer(Fixed Window)
