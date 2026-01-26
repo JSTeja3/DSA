@@ -1,0 +1,63 @@
+****** PROBLEM STATEMENT ******
+
+LeetCode:
+Given an integer array nums, handle multiple queries of the following type:
+
+Calculate the sum of the elements of nums between indices left and right inclusive 
+where left <= right.
+
+Implement the NumArray class:
+
+NumArray(int[] nums) Initializes the object with the integer array nums.
+
+int sumRange(int left, int right) Returns the sum of the elements of nums between 
+indices left and right inclusive (i.e. nums[left] + nums[left + 1] + ... + nums[right]).
+ 
+
+Input Format
+
+The first line contains an integer n, the length of the array nums.
+
+The second line contains n space-separated integers representing the array nums.
+
+The third line contains an integer q, the number of queries.
+
+The next q lines each contain two integers left and right, representing a sumRange(left, right) query.
+
+
+Output Format
+
+For each query, output a single integer: the sum of elements in the range [left, right] (inclusive).
+
+Print each result on a new line, in the order the queries are given.
+
+Constraints:
+
+1 <= nums.length <= 10^4
+-105 <= nums[i] <= 10^5
+0 <= left <= right < nums.length
+At most 10^4 calls will be made to sumRange.
+
+Sample Inputs
+
+Example 1:
+Input
+6
+-2 0 3 -5 2 -1
+3
+0 2
+2 5
+0 5
+Output
+1
+-1
+-3
+
+Explanation
+NumArray numArray = new NumArray([-2, 0, 3, -5, 2, -1]);
+numArray.sumRange(0, 2); // return (-2) + 0 + 3 = 1
+numArray.sumRange(2, 5); // return 3 + (-5) + 2 + (-1) = -1
+numArray.sumRange(0, 5); // return (-2) + 0 + 3 + (-5) + 2 + (-1) = -3
+
+ -->  O(N*N), O(1) - Brute Force
+ -->  O(N), O(N) - Prefix Sum
