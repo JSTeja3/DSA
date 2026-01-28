@@ -1,0 +1,39 @@
+*** PROBLEM STATEMENT ******
+
+Given an array of non-negative integers nums and an integer k, 
+return the number of contiguous subarrays whose sum is less than or equal to k.
+
+Input Format
+
+First line: integer N
+
+Second line: N space-separated positive integers
+
+Third line: integer k
+
+Output Format
+
+Print a single integer -> Count of subarrays having sum less than or equal to k
+If no such subarray exists, return 0
+
+Constraints
+
+1 ≤ nums.length ≤ 10^5
+
+0 ≤ nums[i] ≤ 10^5
+
+0 ≤ k ≤ 10^9
+
+Sample Inputs
+
+Example 1:
+Input: nums = [1,2,3], k = 4
+Output: 4
+Explanation: Valid subarrays are [1], [2], [3], [1,2].
+
+Example 2:
+Input: nums = [2,1,1], k = 2
+Output: 4
+Explanation: [2], [1], [1], [1,1].
+
+ -->  O(N*N), O(1) - Brute Force 
