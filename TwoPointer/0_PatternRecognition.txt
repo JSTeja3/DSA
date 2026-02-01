@@ -25,3 +25,4 @@
    2. aleast k (>=k): atleast k unique
    3. equals k (==k): count subarrays whose sum equals to k 
    4. delayed shrinking: longest repeating characters replacement 
+   5. count subarrays with sum k: "atmostk" trick 
