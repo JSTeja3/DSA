@@ -39,6 +39,6 @@ Input: s = "leetcode", k = 3
 Output: 2
 Explanation: "lee", "eet" and "ode" contain 2 vowels.
 
- -->  O(N*N), O(1) - Brute Force
+ -->  O(N*K), O(1) - Brute Force
  -->  O(N), O(1) - Two Pointer(Fixed Window)
 

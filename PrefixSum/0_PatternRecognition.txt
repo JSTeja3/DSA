@@ -1,0 +1,10 @@
+********** PREFIX SUM **********
+
+--> When to Use:
+ 1. When Mathematical equation is invertible
+
+--> Types:
+ 1. Subarrays sum = k (addtion can ber inverted using subtraction)
+ 2. Count subarrays with k odds (same adding count and subtracting is invertible)
+ 3. **Fail: Subarryas with product = k (product is not invertible as division of integers will lose floating point)
+ 
