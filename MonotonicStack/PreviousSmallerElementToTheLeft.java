@@ -20,7 +20,7 @@ public class PreviousSmallerElementToTheLeft {
         int[] ans  = new int[arr.length];
         Deque<Integer> dq = new ArrayDeque<>();
         for(int i=0; i<arr.length; i++){
-            while(!dq.isEmpty() && dq.peek()>arr[i]){
+            while(!dq.isEmpty() && dq.peek()>=arr[i]){
                 dq.pop();
             }
             ans[i] = dq.isEmpty()?-1:dq.peek();

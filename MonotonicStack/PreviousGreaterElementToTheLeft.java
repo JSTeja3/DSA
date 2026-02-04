@@ -20,7 +20,7 @@ public class PreviousGreaterElementToTheLeft {
         int[] ans = new int[arr.length];
         Deque<Integer> dq = new ArrayDeque<>();  
         for(int i=0; i<arr.length; i++){
-            while(!dq.isEmpty() && dq.peekFirst() < arr[i]){
+            while(!dq.isEmpty() && dq.peekFirst() <= arr[i]){
                 dq.removeFirst();
             }
             ans[i] = dq.isEmpty()?-1:dq.peekFirst();
