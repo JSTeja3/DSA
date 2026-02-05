@@ -13,6 +13,7 @@ public class LargestRectangleInHistogram {
             heights[i] = sc.nextInt();
         }
         System.out.println(largestRectangleArea(heights));
+        //System.out.println(largestRectangleAreaOnePass(heights));
         sc.close();
     }
     public static int largestRectangleArea(int[] heights) {
@@ -41,4 +42,40 @@ public class LargestRectangleInHistogram {
         }
         return maxArea;
     }
+
+
+
+
+
+    // Above solution only but using a single loop and single stack
+    public static int largestRectangleAreaOnePass(int[] heights) {
+        int maxArea = 0;
+        Deque<Integer> dq = new ArrayDeque<>();
+        int N = heights.length;
+        int h = 0;
+        int l = 0;
+        int area = 0;
+        for (int i = 0; i < N; i++) {
+            if (dq.isEmpty() || heights[i] >= heights[dq.peek()]) {
+                dq.push(i);
+                continue;
+            }
+            while (!dq.isEmpty() && heights[i] < heights[dq.peek()]) {
+                h = heights[dq.pop()];
+                l = (dq.isEmpty()) ? -1 : dq.peek();
+                area = h * (i - l - 1);
+                maxArea = Integer.max(maxArea, area);
+            }
+            dq.push(i);
+        }
+        while(!dq.isEmpty()){
+            h = heights[dq.pop()];
+            l = (dq.isEmpty()) ? -1 : dq.peek();
+            area = h*(N-l-1);
+            maxArea = Integer.max(area, maxArea);
+        }
+        
+        return maxArea;
+    }
+
 }
