@@ -47,7 +47,7 @@ public class LargestRectangleInHistogram {
 
 
 
-    // Above solution only but using a single loop and single stack
+    // Same solution but using a single loop and single stack
     public static int largestRectangleAreaOnePass(int[] heights) {
         int maxArea = 0;
         Deque<Integer> dq = new ArrayDeque<>();

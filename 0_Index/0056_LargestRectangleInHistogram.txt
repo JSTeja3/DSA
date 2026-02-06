@@ -35,6 +35,6 @@ Output: 4
 
  -->  O(N*N), O(1) - Brute Force
  -->  O(N), O(N) - Monotonic Stack
-        -->Multi Pass -O(N+N+N)-Leftsmaller+Rightsmaller+Area, O(2N+2N)-2stacks+2arrays
+        -->Multi Pass -O(N+N+N)-Previoussmaller+Nextsmaller+Area, O(2N+2N)-2stacks+2arrays
         -->One Pass   -O(N+N)-Area+Cleanup, O(N)-1stack
 
