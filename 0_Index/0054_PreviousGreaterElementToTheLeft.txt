@@ -1,0 +1,32 @@
+****** PROBLEM STATEMENT ******
+
+Given an array of integers nums, for each element find the previous greater element to its left.
+The previous greater element of an element x is the first element to the left of x that is strictly greater than x.
+If no such element exists, return -1 for that position.
+
+Input Format
+
+First line: Integer N (size of array)
+
+Second line: N space-separated positive integers representing nums
+
+Output Format
+
+Print N space-separated integers where the i-th value is the previous greater element of arr[i]
+
+Constraints
+
+1 ≤ N ≤ 10^5
+-10^9 ≤ arr[i] ≤ 10^9
+
+
+Sample Input:
+
+Input:
+5
+4 5 2 10 8
+Output:
+-1 -1 5 -1 10
+
+ -->  O(N*N), O(1) - Brute Force
+ -->  O(N), O(N) - Monotonic Stack

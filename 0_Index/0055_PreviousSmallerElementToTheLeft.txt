@@ -1,0 +1,32 @@
+****** PROBLEM STATEMENT ******
+
+Given an array of integers arr[] of size N, for each index i, find the nearest element to the left 
+of i that is strictly smaller than arr[i].
+If no such element exists, return -1 for that index.
+
+Input Format
+
+First line: Integer N (size of array)
+
+Second line: N space-separated positive integers representing nums
+
+Output Format
+
+Print N integers where the i-th integer is the previous smaller element of arr[i], or -1 if none exists.
+
+Constraints
+
+1 ≤ N ≤ 10^5
+-10^9 ≤ arr[i] ≤ 10^9
+
+
+Sample Input:
+
+Input:
+5
+4 5 2 10 8
+Output:
+-1 4 -1 2 2
+
+ -->  O(N*N), O(1) - Brute Force
+ -->  O(N), O(N) - Monotonic Stack
