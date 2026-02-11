@@ -14,6 +14,8 @@ First line: Integer N (size of array)
 
 Second line: N space-separated positive integers representing nums
 
+Third line: Integer k (size of window)
+
 Output Format
 
 Print N-k-1 integers each representing the maximum of sub array of size k
