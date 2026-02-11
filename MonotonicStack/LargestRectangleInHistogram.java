@@ -56,10 +56,6 @@ public class LargestRectangleInHistogram {
         int l = 0;
         int area = 0;
         for (int i = 0; i < N; i++) {
-            if (dq.isEmpty() || heights[i] >= heights[dq.peek()]) {
-                dq.push(i);
-                continue;
-            }
             while (!dq.isEmpty() && heights[i] < heights[dq.peek()]) {
                 h = heights[dq.pop()];
                 l = (dq.isEmpty()) ? -1 : dq.peek();
