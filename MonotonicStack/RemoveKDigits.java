@@ -1,4 +1,4 @@
-package MonotonicDeque;
+package MonotonicStack;
 
 import java.util.*;
 

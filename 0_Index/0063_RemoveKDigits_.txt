@@ -39,4 +39,4 @@ Output: "0"
 Explanation: Remove all the digits from the number and it is left with nothing which is 0.
 
  -->  O(Combination(N, k)), O(1) - Brute Force(Exponential complexity and not efficient)-**No solution in this repo**
- -->  O(N), O(N) - Monotonic Deque + Greedy
+ -->  O(N), O(N) - Monotonic Stack + Greedy
