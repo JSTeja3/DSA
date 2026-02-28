@@ -1,0 +1,15 @@
+********** MONOTONIC STACK **********
+
+--> When to Use:
+ 1.When we want comparison in particular direction like how far/how many days till etc
+
+
+--> Types:
+ Basic type:
+  1. Next Greater Element(NGE)
+  2. Next Smaller Element(NSE)
+  3. Previous Greater Element(PGE)
+  4. Previous Smaller Element(PSE)
+ 
+--> Note: 
+ 1. All other problems like histogram, rain water, subarray mins/maxs are based on these types
