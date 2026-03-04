@@ -1,5 +1,7 @@
 package TwoPointer;
 
+import java.util.HashMap;
+import java.util.Map;
 import java.util.Scanner;
 
 public class LongestSubarrayAtmostKDistinctInteger {
@@ -16,19 +18,24 @@ public class LongestSubarrayAtmostKDistinctInteger {
     }
     public static int longestKDistinct(int[] nums, int k){
         int maxLength = 0;
-        int[] count = new int[(int)1e5];
+        //int[] count = new int[(int)1e5];
+        Map<Integer, Integer> map = new HashMap<>();
         int p1 = 0;
         int p2 = 0;
-        int c = 0;
         while(p2<nums.length){
-            count[nums[p2]]++;
-            if(count[nums[p2]]==1){
-                c++;
-            }
-            while(c>k){
-                count[nums[p1]]--;
-                if(count[nums[p1]]==0){
-                    c--;
+            //count[nums[p2]]++;
+            map.put(nums[p2], map.getOrDefault(nums[p2], 0)+1);
+            // if(count[nums[p2]]==1){
+            //     c++;
+            // }
+            while(map.size()>k){
+                //count[nums[p1]]--;
+                // if(count[nums[p1]]==0){
+                //     c--;
+                // }
+                map.put(nums[p1], map.get(nums[p1])-1);
+                if(map.get(nums[p1])==0){
+                    map.remove(nums[p1]);
                 }
                 p1++;
             }
