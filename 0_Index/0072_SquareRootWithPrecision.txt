@@ -37,5 +37,5 @@ Example 3
 Input:  x = 0.25
 Output: 0.500000
 
- --> O(N*10^6) - BruteForce - 10^6 for decimal spaces mentioned in question
+ --> O(N*10^6) - Brute Force - 10^6 for decimal spaces mentioned in question
  --> O(log(N*10^6)) - Binary Search
