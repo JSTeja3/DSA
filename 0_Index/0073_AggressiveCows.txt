@@ -57,6 +57,6 @@ The minimum distance between cows in this case is 1, which is the largest among 
 
 
 
- -->O(N*(max(stalls)-min(stalls))) - Brute Force
- -->O(N*log(max(stalls)-min(stalls))) - Binary Search
+ -->O(N*(max(stalls)-min(stalls))), O(1) - Brute Force
+ -->O(N*log(max(stalls)-min(stalls))), O(1)- Binary Search
  
