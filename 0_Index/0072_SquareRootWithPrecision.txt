@@ -1,0 +1,41 @@
+****** PROBLEM STATEMENT ******
+
+Given a non-negative real number x, compute and return its square root up to 6 decimal places.
+
+You are not allowed to use any built-in square root functions such as:
+
+Math.sqrt():
+
+Input Format
+
+First line: Integer x;
+
+Output Format
+
+Print a single integer → square root of x
+
+
+
+
+Constraints:
+
+0 ≤ x ≤ 10^12
+
+
+Sample Inputs
+
+Example 1
+Input:  x = 4
+Output: 2.000000
+
+Example 2
+Input:  x = 10
+Output: 3.162277
+(Because √10 ≈ 3.162277660...)
+
+Example 3
+Input:  x = 0.25
+Output: 0.500000
+
+ --> O(N*10^6), O(1) - Brute Force - 10^6 for decimal spaces mentioned in question
+ --> O(log(N*10^6)), O(1) - Binary Search
