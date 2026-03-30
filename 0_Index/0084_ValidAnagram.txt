@@ -1,0 +1,41 @@
+****** PROBLEM STATEMENT ******
+
+LeetCode:
+Given two strings s and t, return true if t is an anagram of s, and false otherwise.
+
+
+
+Input Format
+
+First line: String s
+
+Second line: String p
+
+
+Output Format
+
+Print booelan value → return true/false based on valid anagram
+
+
+
+Constraints:
+
+1 <= s.length, t.length <= 5 * 10^4
+s and t consist of lowercase English letters.
+
+
+Sample Input:
+
+Example 1:
+Input: s = "anagram", t = "nagaram"
+Output: true
+
+Example 2:
+Input: s = "rat", t = "car"
+Output: false
+
+
+
+ -->O(N*N), O(N) - Brute Force
+ -->O(N), O(N) - Hash Map         --> O(N), O(1) - frequency count
+ 
