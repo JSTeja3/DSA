@@ -13,6 +13,7 @@ public class MajorityElement {
         System.out.println(majorityElement(nums));
         sc.close();
     }
+    // **** Boyer–Moore Voting Algorithm *****
     public static int majorityElement(int[] nums){
         int answer = 0;
         int count = 0;

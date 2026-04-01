@@ -43,4 +43,4 @@ Output: 2
 
  --> O(N*N) O(1) - Brute Force
  --> O(N), O(N) - Hash Map
- --> O(N), O(1) - Miscellaneous
+ --> O(N), O(1) - Miscellaneous(Boyer–Moore Voting Algorithm)
