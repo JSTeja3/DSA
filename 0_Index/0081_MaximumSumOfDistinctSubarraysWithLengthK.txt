@@ -53,5 +53,5 @@ Explanation: The subarrays of nums with length 3 are:
 - [4,4,4] which does not meet the requirements because the element 4 is repeated.
 We return 0 because no subarrays meet the conditions.
  
- -->O(N*N), O(1) - Brute Force
+ -->O(N*k), O(k) - Brute Force
  -->O(N), O(N) - Two pointer

@@ -1,4 +1,6 @@
+import java.util.HashSet;
 import java.util.Scanner;
+import java.util.Set;
 
 public class MaximumSumOfDistinctSubarraysWithLengthK {
     public static void main(String[] args) {
@@ -15,18 +17,18 @@ public class MaximumSumOfDistinctSubarraysWithLengthK {
 
     public static long maximumSubarraySum(int[] nums, int k) {
         long maxSum = 0;
-        for (int i = 0; i < nums.length; i++) {
-            long sum = 0;
-            int[] count = new int[(int) 1e5];
-            for (int j = i; j < nums.length; j++) {
-                count[nums[j]]++;
-                sum += nums[j];
-                if (count[nums[j]] > 1 || j - i + 1 > k) {
+        for(int i=0; i<=nums.length-k; i++){
+            int sum = 0;
+            Set<Integer> set = new HashSet<>();
+            for(int j=i; j<i+k; j++){
+                if(set.contains(nums[j])){
+                    sum = 0;
                     break;
-                } else if (j - i + 1 == k) {
-                    maxSum = Math.max(maxSum, sum);
                 }
+                sum += nums[j];
+                set.add(nums[j]);
             }
+            maxSum = Math.max(maxSum, sum);
         }
         return maxSum;
     }
