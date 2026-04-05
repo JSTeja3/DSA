@@ -14,22 +14,21 @@ public class MinimumSizeSubarraySum {
         System.out.println(minSubArrayLen(target, nums));
         sc.close();
     }
+
     public static int minSubArrayLen(int target, int[] nums) {
-        int minLength = nums.length;
-        boolean valid = false;
-        int p1 = 0; 
-        int p2 = 0;
+        int minLength = Integer.MAX_VALUE;
         int sum = 0;
-        while(p2<nums.length){
+        int p1 = 0;
+        int p2 = 0;
+        while (p2 < nums.length) {
             sum += nums[p2];
-            while(sum >= target){
-                valid = true;
-                minLength = Integer.min(minLength, p2-p1+1);
+            while (sum >= target) {
+                minLength = Math.min(minLength, p2 - p1 + 1);
                 sum -= nums[p1];
                 p1++;
             }
             p2++;
         }
-        return (valid)?minLength:0;
+        return (minLength == Integer.MAX_VALUE) ? 0 : minLength;
     }
 }

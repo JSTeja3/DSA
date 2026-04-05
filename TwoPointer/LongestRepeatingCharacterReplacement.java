@@ -24,7 +24,7 @@ public class LongestRepeatingCharacterReplacement {
             }
             /* keeping maxRepeat stale for few iterations is fine instead of 
             constantly updating it, as it wouldn't affect the final maxLength
-            (try tracing few few examples to understand better) */    
+            (try tracing few examples to understand better) */    
             while(((p2-p1+1)-maxRepeat)>k){
                 int y = s.charAt(p1)-'A';
                 count[y]--; 
