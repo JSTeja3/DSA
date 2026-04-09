@@ -14,7 +14,8 @@ You must implement a solution with O(1) time complexity for each function.
 
 
 
-Note: Solution to this problem is written in leetcode style so kindly visit original leetcode url to test
+***Note***
+Solution to this problem is written in leetcode style so kindly visit original leetcode url to test
 this code
 
 

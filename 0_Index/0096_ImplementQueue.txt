@@ -1,0 +1,39 @@
+****** PROBLEM STATEMENT ******
+
+Design a Queue data structure that supports the following operations:
+
+Operations:
+enqueue(x) → Insert element x at the rear
+dequeue() → Remove element from the front
+peek() → Return the front element without removing it
+isEmpty() → Return true if queue is empty
+
+
+
+📘 Example
+Queue q = new Queue()
+
+q.enqueue(10)
+q.enqueue(20)
+q.enqueue(30)
+
+q.peek()     → 10
+q.dequeue()  → 10
+
+q.peek()     → 20
+q.isEmpty()  → false
+
+
+
+Constraints / Expectations
+Use either:
+Array-size[1000]
+Linked List
+
+
+Operations should be efficient:
+enqueue → O(1)
+dequeue → O(1)
+
+
+ --> O(1) O(1) - Monotonic Queue(Arrays, LinkedList)
