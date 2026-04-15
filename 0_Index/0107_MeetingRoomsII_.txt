@@ -60,4 +60,4 @@ Explanation: 1st and 2nd meetings at one room but for 3rd meeting one another ro
 
 
  --> O(N*N) O(1) - Brute Force
- --> O(N*log(N)), O(N) Priority Queue
+ --> O(N*log(N)), O(N) - Priority Queue
