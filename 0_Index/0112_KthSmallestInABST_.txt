@@ -44,4 +44,5 @@ Output: 3
 
 
  --> O(N), O(N) - BruteForce
- --> O(N), O(N*log(N)) - Tree(Optimized)
+ --> O(N), O(h) - Tree(Optimized)
+ h=height of Tree
