@@ -1,36 +1,6 @@
 ****** PROBLEM STATEMENT ******
 
-LeetCode:
-Given a binary array nums, return the maximum number of consecutive 1's 
-in the array if you can flip at most 'one' 0's.
-
-Input Format
-
-First line: integer N
-
-Second line: N space-separated positive integers
-
-Output Format
-
-Print a single integer → length of longest substring having only 1's after performing one flip  
-
-Constraints
-
-1 <= nums.length <= 10^5
-
-nums[i] is either 0 or 1.
-
-Sample Inputs
-
-Example 1: 
-Input: nums = [1,1,0,1,1,1] 
-Output: 6 
-Explanation: The first two digits or the last three digits are consecutive 1s. 
-by flipping 1 zero it is total 6 consecutive 1's 
-
-Example 2: 
-Input: nums = [1,0,1,1,0,1] 
-Output: 4
+https://leetcode.com/problems/max-consecutive-ones-ii/description/
 
  -->  O(N*N), O(1) - Brute Force 
  -->  O(N), O(1) - Two Pointer(Slinding Window)
