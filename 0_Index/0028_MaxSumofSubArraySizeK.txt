@@ -1,48 +1,10 @@
 ****** PROBLEM STATEMENT ******
 
 Geeks For Geeks:
-Given an array of integers arr[]  and a number k. Return the maximum sum of a subarray of size k.
+https://www.geeksforgeeks.org/problems/max-sum-subarray-of-size-k5313/1
 
-Note: A subarray is a contiguous part of any given array.
 
-Input Format
 
-First line: integer N
-
-Second line: N space-separated positive integers
-
-Third line: integer K
-
-Output Format
-
-Print a single integer → maximum of sum of the all the subarray with size K
-
-Print 0 if no such subarray exists
-
-Constraints
-
-1 ≤ N ≤ 10^6
-
-1 ≤ arr[i] ≤ 10^6
-
-1 ≤ k ≤ N
-
-Sample Inputs
-
-Examples:1
-Input: arr[] = [100, 200, 300, 400], k = 2
-Output: 700
-Explanation: arr2 + arr3 = 700, which is maximum.
-
-Examples:2
-Input: arr[] = [1, 4, 2, 10, 23, 3, 1, 0, 20], k = 4
-Output: 39
-Explanation: arr1 + arr2 + arr3 + arr4 = 39, which is maximum.
-
-Examples:4
-Input: arr[] = [100, 200, 300, 400], k = 1
-Output: 400
-Explanation: arr3 = 400, which is maximum.
 
 -->  O(N*k), O(1) - Brute Force
 -->  O(N), O(1) - Two Pointer(Fixed Window)

@@ -1,52 +1,8 @@
 ****** PROBLEM STATEMENT ******
 
-Geek for Geeks:
-Given an array arr[], the task is to find the sum of the maximum elements of every 
-possible non-empty sub-arrays of the given array arr[].
 
-Note: The answer will always fit into 32 bit integer.
+https://www.geeksforgeeks.org/dsa/sum-of-maximum-elements-of-all-possible-sub-arrays-of-an-array/
 
-Input Format
-
-First line: integer N
-
-Second line: N space-separated positive integers
-
-Output Format
-
-Print a single integer → Sum of maximum in all subarrays
-
-Constraints:
-
-1 <= arr.size() <= 10^4
-0 <= arr[i] <= 10^9
-
-Sample Input:
-
-Example 1:
-Input: arr[] = [1, 3, 2]
-Output: 15
-Explanation: All possible non-empty subarrays of 
-[1, 3, 2] are [1], [3], [2], [1, 3], [3, 2] and [1, 3, 2]. 
-The maximum elements of the subarrays are 1, 3, 2, 3, 3, 3 respectively. 
-The sum will be 15.
-
-Example 2:
-Input: arr[] = [3, 1]
-Output: 7
-Explanation: All possible non-empty subarrays of 
-[3, 1] are [3], [1] and [3, 1]. 
-The maximum elements of the subarrays are 3, 1, 3 respectively.
-The sum will be 7.
-
-
-Example 3:
-Input: arr[] = [8, 0, 1]
-Output: 26
-Explanation: All possible non-empty subarrays of 
-[8, 0, 1] are [8], [0], [1], [8, 0], [0, 1] and [8, 0, 1]. 
-The maximum elements of the subarrays are 8, 0, 1, 8, 1, 8 respectively. 
-The sum will be 26.
 
  -->  O(N*N), O(1) - Brute Force
  -->  O(N), O(N) - Monotonic Stack
