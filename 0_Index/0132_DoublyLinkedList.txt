@@ -1,0 +1,34 @@
+***** Problem Statement ******
+
+Implement Doubly Linked List Class for generic class type with the below methods
+
+
+Node
+Constructor
+addFirst()
+addLast()
+removeFirst()
+removeLast()
+get()
+set()
+insert()
+remove(index)
+contains()
+indexOf()
+clear()
+toString()
+
+
+-->
+Method	    Complexity
+
+addFirst	O(1)
+addLast	    O(1)
+removeFirst	O(1)
+removeLast	O(1)*
+get	        O(n)
+set	        O(n)
+insert	    O(n)
+remove	    O(n)
+contains	O(n)
+indexOf	    O(n)

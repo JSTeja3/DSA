@@ -1,0 +1,33 @@
+***** Problem Statement ******
+
+Implement Dynamic Array Class(ArrayList) for generic class type with the below methods
+
+Constructor
+add()
+get()
+set()
+size()
+isEmpty()
+Resize logic
+remove()
+insert()
+contains()
+indexOf()
+clear()
+toString()
+
+
+-->
+Method	        Complexity
+
+add()	        Amortized O(1)
+get()	        O(1)
+set()	        O(1)
+remove(index)	O(n)
+insert(index)	O(n)
+contains()	    O(n)
+indexOf()	    O(n)
+size()	        O(1)
+isEmpty()	    O(1)
+clear()         O(n)
+toString()      O(n)
