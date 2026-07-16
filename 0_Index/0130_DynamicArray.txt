@@ -17,7 +17,7 @@ clear()
 toString()
 
 
--->
+--> Brute Force
 Method	        Complexity
 
 add()	        Amortized O(1)

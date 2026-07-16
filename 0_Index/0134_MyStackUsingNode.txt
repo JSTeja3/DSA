@@ -1,0 +1,20 @@
+***** Problem Statement ******
+
+Implement Stack Class using LinkedList(or Node to be precise) for generic class type with the below methods
+
+push(T value)
+pop()
+peek()
+size()
+isEmpty()
+clear()
+
+
+--> Brute Force
+Method	         Complexity
+push(T value)	 O(1)
+pop()	         O(1)
+peek()	         O(1)
+size()	    	 O(1)
+isEmpty()	     O(1)
+clear()	    	 O(1)

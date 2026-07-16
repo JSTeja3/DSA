@@ -19,7 +19,7 @@ clear()
 toString()
 
 
--->
+--> Brute Force
 Method	    Complexity
 
 addFirst	O(1)
